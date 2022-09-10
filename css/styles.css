@@ -1,0 +1,389 @@
+/* -------------variables------------- */
+:root {
+  --main-text-color: #212121;
+  --hover-color: #2196f3;
+  --sub-text-color: #757575;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.section {
+  padding: 94px 0px;
+}
+
+/* --------------Header---------------- */
+.head-border {
+  border: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo {
+  margin-right: 93px;
+}
+
+.logo,
+.logo-part {
+  color: black;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-foot {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-part {
+  color: #2196f3;
+}
+
+/* Navigation */
+.navigation-list {
+  display: flex;
+}
+
+.navigation-li + .navigation-li {
+  margin-left: 50px;
+}
+
+.navigation-bar {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-list :hover,
+.navigation-list :focus {
+  color: var(--hover-color);
+}
+
+.navigation-bar.condition {
+  color: var(--hover-color);
+}
+
+/* Contacts */
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-hover :hover,
+.contacts-hover :focus {
+  color: var(--hover-color);
+}
+
+.contacts-head {
+  text-decoration: none;
+  color: var(--sub-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-head + .contacts-head {
+  margin-left: 50px;
+}
+
+/* --------------Page 1---------------- */
+
+/* hero */
+.hero {
+  background-color: #2f303a;
+  padding: 200px 0px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 696px;
+  margin-bottom: 30px;
+}
+
+.order-btn {
+  background-color: var(--hover-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+
+  padding: 6px 22px;
+  margin: 0 auto;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  background-color: #ffffff;
+  color: var(--hover-color);
+}
+
+/* our benefits */
+.benefits h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.benefits p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--sub-text-color);
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-point {
+  width: 270px;
+}
+.benefits-point + .benefits-point {
+  margin-left: 30px;
+}
+/* what we do */
+.whatwedo-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.whatwedo {
+  padding-top: 0px;
+}
+
+.whatwedo-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* team */
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-prof {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--sub-text-color);
+}
+
+.team-point {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.team-wrap {
+  padding: 30px 10px;
+}
+/* --------------Page 2---------------- */
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-family: inherit;
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  padding: 6px 22px;
+
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+.filter-btn + .filter-btn {
+  margin-left: 8px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: var(--hover-color);
+}
+
+/* Products */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-text {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.product-thing {
+  color: var(--sub-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+/* --------------Footer---------------- */
+.foot {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts-center {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+
+.contacts-addrs {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.contact-foot {
+  margin-top: 20px;
+}
+
+.addrs-wrap + .addrs-wrap {
+  margin-top: 9px;
+}
