@@ -55,7 +55,7 @@ img {
 
 /* --------------Header---------------- */
 .head-border {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -142,16 +142,18 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: inline-block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  justify-content: center;
 }
 .contacts-head + .contacts-head {
   margin-left: 50px;
 }
 
 .icon-header {
+  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -238,7 +240,9 @@ img {
 }
 
 .icon-benefits {
-  padding: 25px 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   height: 120px;
   width: 270px;
@@ -311,16 +315,33 @@ img {
   padding: 30px 10px;
 }
 
-.icons-list {
+.icon-list {
   display: flex;
-  padding: 0px 32px 30px 32px;
-  justify-content: space-around;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.icons-list-li {
+.icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  fill: #afb1b8;
 }
+
+.icon-social:hover,
+.icon-social:focus {
+  background-color: var(--hover-color);
+  fill: #ffffff;
+}
+
+.icon-svg {
+}
+
 /* clients */
 .clients {
   font-weight: 700;
@@ -333,6 +354,37 @@ img {
 
 .clients-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-point:hover,
+.clients-point:focus {
+  border-color: var(--hover-color);
+}
+
+.clients-icons {
+  fill: #afb1b8;
+}
+.clients-point:hover .clients-icons,
+.clients-icons:focus {
+  fill: var(--hover-color);
+}
+
+.clients-icons:hover,
+.clients-icons:focus {
+  fill: var(--hover-color);
 }
 /* --------------Page 2---------------- */
 
@@ -434,6 +486,50 @@ img {
   margin-top: 20px;
 }
 
+.addres-footer {
+  margin-right: 100px;
+}
+
 .addrs-wrap + .addrs-wrap {
   margin-top: 9px;
+}
+
+.foot-div {
+  display: flex;
+  align-items: baseline;
+}
+
+.foot-icon-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foot-icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+}
+
+.foot-icon-social:hover,
+.foot-icon-social:focus {
+  background-color: var(--hover-color);
+  fill: #ffffff;
+}
+
+.go-icons {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
