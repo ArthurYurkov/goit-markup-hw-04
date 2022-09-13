@@ -161,11 +161,13 @@ img {
 
 /* hero */
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: #2f303a;
   padding: 200px 0px;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/herobg.jpg');
+    url('../images/herobg.jpg');
   background-size: cover;
 }
 
@@ -330,16 +332,17 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .icon-social:hover,
 .icon-social:focus {
   background-color: var(--hover-color);
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .icon-svg {
+  fill: currentColor;
 }
 
 /* clients */
@@ -451,8 +454,7 @@ img {
   margin-bottom: 4px;
 }
 
-.product-position:hover,
-.product-position:focus {
+.product-position:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
